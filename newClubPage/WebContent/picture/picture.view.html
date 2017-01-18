@@ -1,0 +1,22 @@
+<h1>Upload Picture</h1>
+
+<br/>
+
+
+
+ <!-- Specify a Angular controller script that binds Javascript variables to the form. -->
+<div class="form" ng-controller="personsFormController">
+
+   <div>
+   
+	   	<form name="pictureForm" ng-submit="uploadPicture()" novalidate>
+			
+			<p>
+				Select a file : <input id="file" name="file" type="file"  maxlength="50" ng-model="file"/>
+			</p>
+	
+			<button type="submit" class="btn btn-primary">Upload</button>
+		</form>
+    </div>
+
+</div>
