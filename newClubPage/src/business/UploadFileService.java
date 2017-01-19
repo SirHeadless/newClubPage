@@ -28,7 +28,7 @@ public class UploadFileService {
 		String fileName = "";
 		
 		Map<String, List<InputPart>> uploadForm = input.getFormDataMap();
-		List<InputPart> inputParts = uploadForm.get("uploadedFile");
+		List<InputPart> inputParts = uploadForm.get("file");
 
 		for (InputPart inputPart : inputParts) {
 
@@ -81,7 +81,7 @@ public class UploadFileService {
 				return finalFileName;
 			}
 		}
-		return "unknown";
+		return "1480772447_button_20.png";
 	}
 
 	//save to somewhere

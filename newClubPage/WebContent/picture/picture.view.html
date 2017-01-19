@@ -12,7 +12,7 @@
 	   	<form name="pictureForm" ng-submit="uploadPicture()" novalidate>
 			
 			<p>
-				Select a file : <input id="file" name="file" type="file"  maxlength="50" ng-model="file"/>
+				Select a file : <input id="file" name="uploadedFile" type="file"  maxlength="50" custom-on-change="uploadFile"/>
 			</p>
 	
 			<button type="submit" class="btn btn-primary">Upload</button>
